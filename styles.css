@@ -26,6 +26,7 @@ body {
   top: 0;
   z-index: 1000;
   width: 100%;
+
 }
 
 .container {
@@ -48,6 +49,12 @@ body {
   display: flex;
   gap: 20px;
 }
+.menu-toggle{
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
 
 .nav-links a {
   color: white;
@@ -182,7 +189,12 @@ footer {
 
 
 @media (max-width: 768px) {
- .container {
+   .menu-toggle{
+     display: block;
+   }
+  
+
+  .container {
     flex-direction: column;
     gap: 10px;
   }
